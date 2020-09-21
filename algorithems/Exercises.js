@@ -1,9 +1,8 @@
 // ================= Exircise-1 =================
 const printStars = function (num) {
-    let i = 1
-    while (i <= num) {
+    while (num > 0) {
         console.log('*'.repeat(i));
-        i ++
+        num --
     }
 }
 printStars(5)
@@ -45,7 +44,7 @@ const reverse = function(str){
   
   reverse("dog") //should return "god"
   reverse("race car") //should return "rac ecar"
-  
+
 // ================= Exircise-5 =================
 const isPalindrom = function (str) {
     str = str.toLowerCase().replace(' ', '');
