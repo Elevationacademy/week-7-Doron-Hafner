@@ -77,17 +77,21 @@
 //     console.log(newStr);
 // }
 // decrypt('dbu')
-// ================= Exircise-8 =================
-const colors = ["red", "indigo", "white", "teal", "yellow"];
-const foods = ["bread", "cheese", "cucumber"];
-const jumble = function (arr1, arr2) {
-    let jumbledArr = []
-    let index1 = Math.floor(Math.random() * arr1.length)
-    console.log(index1);
-    return jumbledArr
-}
-
-jumble(colors, foods) // could return: ["cheese",teal","cucumber","red","bread","yellow","white","indigo"]
+// // ================= Exircise-8 =================
+// const colors = ["red", "indigo", "white", "teal", "yellow"];
+// const foods = ["bread", "cheese", "cucumber"];
+// const jumble = function (arr1, arr2) {
+//     let jumbledArr = arr1.concat(arr2)
+//     for (let i in jumbledArr) {
+//         let ran = Math.floor(Math.random() * jumbledArr.length)
+//         const val = jumbledArr[i]
+//         jumbledArr[i] =  jumbledArr[ran]
+//         jumbledArr[ran] = val
+//     }
+//     console.log(jumbledArr);
+//     return jumbledArr
+// }
+// jumble(colors, foods)
 // ================= Exircise-9 =================
 // ================= Extension-1 =================
 // ================= Extension-2 =================
