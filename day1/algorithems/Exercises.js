@@ -59,13 +59,37 @@
 //     return true;
 // }
 // isPalindrom('Taco Cat')
-// ================= Exircise-6 =================
-const encrypt = function (str) {
-    let newStr = ''
-    for (let i in str) {
-        newStr += String.fromCharCode(str.charCodeAt(i)+1)
-    }
-    console.log(newStr);
+// // ================= Exircise-6 =================
+// const encrypt = function (str) {
+//     let newStr = ''
+//     for (let i in str) {
+//         newStr += String.fromCharCode(str.charCodeAt(i)+1)
+//     }
+//     console.log(newStr);
+// }
+// encrypt('cat')
+// // ================= Exircise-7 =================
+// const decrypt = function (str) {
+//     let newStr = ''
+//     for (let i in str) {
+//         newStr += String.fromCharCode(str.charCodeAt(i)-1)
+//     }
+//     console.log(newStr);
+// }
+// decrypt('dbu')
+// ================= Exircise-8 =================
+const colors = ["red", "indigo", "white", "teal", "yellow"];
+const foods = ["bread", "cheese", "cucumber"];
+const jumble = function (arr1, arr2) {
+    let jumbledArr = []
+    let index1 = Math.floor(Math.random() * arr1.length)
+    console.log(index1);
+    return jumbledArr
 }
-encrypt('cat')
-// ================= Exircise-5 =================
+
+jumble(colors, foods) // could return: ["cheese",teal","cucumber","red","bread","yellow","white","indigo"]
+// ================= Exircise-9 =================
+// ================= Extension-1 =================
+// ================= Extension-2 =================
+// ================= Extension-3 =================
+// ================= Extension-4 =================
