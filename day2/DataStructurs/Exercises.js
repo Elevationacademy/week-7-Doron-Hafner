@@ -5,7 +5,7 @@ class UniqueArray {
     }
 
     add(item) {
-        !this.items[item] ? (this.items[item] = true, this.arr.push(item)) : 'x'
+        !this.items[item] ? (this.items[item] = true, this.arr.push(item)) : ''
     }
 
     showAll() {
@@ -13,7 +13,7 @@ class UniqueArray {
     }
 
     exists(item) {
-        return this.items[item] ? true : false
+        console.log(this.items[item] ? true : false);
     }
 
     get(index) {
