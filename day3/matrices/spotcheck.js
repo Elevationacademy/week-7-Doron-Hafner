@@ -1,11 +1,12 @@
-// // ================= spotCheck-1 =================
-// let matrix = [
-//     [1, 2],
-//     [3, 4],
-//     [5, 6],
-//     [7, 8],
-//     [9,]
-// ]
+// ================= spotCheck-1 =================
+let matrix = [
+    [1, 2],
+    [3, 4],
+    [5, 6],
+    [7, 8],
+    [9,]
+]
+
 // ================= spotCheck-2 =================
 const generateMatrix = function (rows, columns) {
     let counter = 0
@@ -26,22 +27,36 @@ const printMatrix = function (matrix) {
         }
     }
 }
-// console.log(printMatrix(matrix))
+console.log(printMatrix(matrix))
+
 // ================= spotCheck-3 =================
 const get = function (row, col){
     return (matrix[row][col]);
 }
-// console.log(get(1,2))
+console.log(get(1,2))
+
 // ================= spotCheck-4 =================
 const print =  function(matrix){
     for (let r = 0; r < matrix.length; r++) {
         const str = matrix[r][0] > 9 ?
         matrix[r].toString().replace(/,/g,'      ') :
         matrix[r].toString().replace(/,/g,'       ')
-        console.log(str);
+        return str;
     }
 }
-print(matrix)
+console.log(print(matrix))
 
+// ================= spotCheck-5 =================
+const printRow = function(matrix, rowNum){
+    for (let i = 0; i < matrix[rowNum].length; i++){
+        console.log(matrix[rowNum][i])
+    }
+}
+printRow(matrix, 2)
 
-// ================= spotCheck-1 =================
+// ================= spotCheck-6 =================
+const alter = function (matrix, row, col, num) {
+    matrix[row][col] = num
+    console.log(matrix);
+}
+alter(matrix,1,2,10)
